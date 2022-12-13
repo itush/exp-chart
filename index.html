@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="./images/favicon-32x32.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Mentor | Expenses chart component</title>
+</head>
+
+<body class="bg-Cream">
+
+  <main class="w-4/5 my-8 mx-auto">
+    <div class="exp-container">
+      <section id="exp-header" class="bg-Softred p-5 rounded-2xl text-Cream flex justify-between align-bottom">
+        <div id="exp-header-text">
+          <p class="sm:text-xl md:text-1xl lg:text-2xl xl:text-3xl 2xl:text-4xl">My balance</p>
+          <h1 class="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">$921.48</h1>
+        </div>
+        <div id="exp-header-img">
+          <img src="./images/logo.svg" alt="logo">
+        </div>
+      </section>
+
+      <section id="exp-body" class="bg-Verypaleorange mt-4 p-5 rounded-2xl">
+        <h2 class="mb-4 font-bold text-2xl text-Darkbrown sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-9xl">
+          Spending - Last 7 days</h2>
+        <div id="exp-body-chart"
+          class="pb-4 flex justify-between items-end h-[70vh] sm:text-sm md:text-lg lg:text-1xl xl:text-2xl 2xl:text-3xl">
+
+          <div id="day-mon" class="cursor-pointer w-1/12 text-center">
+
+            <p id="amt-mon" class="hidden bg-Darkbrown p-1 rounded text-white mb-2"></p>
+            <div id="bar-mon" class="bar bg-Softred rounded hover:opacity-70"></div>
+            <p class="text-Mediumbrown">mon</p>
+          </div>
+
+          <div id="day-tue" class="cursor-pointer w-1/12 text-center">
+            <p id="amt-tue" class="hidden bg-Darkbrown p-1 rounded text-white mb-2"></p>
+            <div id="bar-tue" class="bar bg-Softred rounded hover:opacity-70"></div>
+            <p class="text-Mediumbrown">tue</p>
+          </div>
+
+          <div id="day-wed" class="cursor-pointer w-1/12 text-center">
+            <p id="amt-wed" class="hidden bg-Darkbrown p-1 rounded text-white mb-2"></p>
+            <div id="bar-wed" class="bar bg-Softred rounded hover:opacity-70"></div>
+            <p class="text-Mediumbrown">wed</p>
+          </div>
+
+          <div id="day-thu" class="cursor-pointer w-1/12 text-center">
+            <p id="amt-thu" class="hidden bg-Darkbrown p-1 rounded text-white mb-2"></p>
+            <div id="bar-thu" class="bar bg-Softred rounded hover:opacity-70"></div>
+            <p class="text-Mediumbrown">thu</p>
+          </div>
+
+          <div id="day-fri" class="cursor-pointer w-1/12 text-center">
+            <p id="amt-fri" class="hidden bg-Darkbrown p-1 rounded text-white mb-2"></p>
+            <div id="bar-fri" class="bar bg-Softred rounded hover:opacity-70"></div>
+            <p class="text-Mediumbrown">fri</p>
+          </div>
+
+          <div id="day-sat" class="cursor-pointer w-1/12 text-center">
+            <p id="amt-sat" class="hidden bg-Darkbrown p-1 rounded text-white mb-2"></p>
+            <div id="bar-sat" class="bar bg-Softred rounded hover:opacity-70"></div>
+            <p class="text-Mediumbrown">sat</p>
+          </div>
+
+          <div id="day-sun" class="cursor-pointer w-1/12 text-center">
+            <p id="amt-sun" class="hidden bg-Darkbrown p-1 rounded text-white mb-2"></p>
+            <div id="bar-sun" class="bar bg-Softred rounded hover:opacity-70"></div>
+            <p class="text-Mediumbrown">sun</p>
+          </div>
+        </div>
+
+        <div id="exp-summary" class="flex justify-between border-Cream border-t-4 pt-4">
+
+          <section id="exp-summary-month-total">
+            <p class="text-Mediumbrown sm:text-xl md:text-1xl lg:text-2xl xl:text-3xl 2xl:text-4xl">Total this month</p>
+            <p class="text-Darkbrown font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
+              $478.33</p>
+          </section>
+
+          <section id="exp-summary-compare" class="text-right">
+            <p class="text-Darkbrown font-bold text-lg sm:text-xl md:text-1xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
+              +2.4%</p>
+            <p class="text-Mediumbrown sm:text-xl md:text-1xl lg:text-2xl xl:text-3xl 2xl:text-4xl">from last month</p>
+          </section>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="text-center text-xs">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-blue-700">Frontend
+        Mentor</a>.
+      Coded by <a href="#" class="text-blue-700">Tushar Biswas</a>.
+    </div>
+  </footer>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
